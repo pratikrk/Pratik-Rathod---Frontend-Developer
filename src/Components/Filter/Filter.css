@@ -1,0 +1,85 @@
+.data-grid {
+  background-color: aliceblue;
+}
+.row {
+  --bs-gutter-x: 0;
+  width: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: center;
+}
+.cardDetails {
+  text-align: left;
+}
+.cardDetails a {
+  text-align: right !important;
+  transition: all 0.3s ease-in-out;
+}
+.cardDetails a:hover {
+  cursor: pointer;
+  font-size: large;
+
+  transform: scale(1.1);
+}
+.line {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.data-grid-container {
+  background-image: url("./images/dragon_feature.png");
+  width: fit-content;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: auto !important;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+}
+.pagination {
+  justify-content: center;
+}
+
+.pagination button {
+  background-color: #000000; /* SpaceX blue color, you can adjust this */
+  color: #fff; /* White text */
+  border: none;
+
+  cursor: pointer;
+}
+
+.pagination span:hover {
+  text-decoration: underline;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+}
+
+.pagination .button .span {
+  margin: 1rem;
+  font-size: medium;
+  font-weight: bold;
+  color: #fff;
+}
+.pagination .paginationtext {
+  margin: 0.5rem;
+  font-size: medium;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none !important;
+}
+@media (max-width: 390px) {
+  .data-grid-container {
+  }
+
+  .cardDetails a {
+    text-align: left !important;
+  }
+
+  .pagination {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,21 @@
+.navbar {
+  top: 0;
+  margin-left: 33.3%;
+  margin-right: 33.3%;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nlogo {
+  text-align: center;
+}
+
+@media (max-width: 390px) {
+  .navbar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
